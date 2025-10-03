@@ -1,12 +1,16 @@
 ## Быстрая сборка
-
-### Linux / macOS
-1. Сделайте скрипт сборки исполняемым:
-   ```bash
-   chmod +x make.sh
-2. Выполните:
-   ```bash
-   ./make.sh
+### Генерация
+```bash
+cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
+```
+### Сборка
+```bash
+cmake --build build --config Release
+```
+### Запуск
+```bash
+./build/reader --roads roads1.geojson --out graph --config config.json 
+```
 
 ## О коде
 - Файлы читаются и записываются
