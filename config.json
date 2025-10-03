@@ -1,0 +1,19 @@
+{
+    "costs": {
+        "trench_per_m": 1.0,
+        "hdd_per_m": 2.0,
+        "transition_per_edge": 5.0
+    },
+    "hdd": {
+        "min_length": 30.0,
+        "max_length": 250.0,
+        "alpha_deg": 10.0
+    },
+    "sampling": {
+        "grid_step": 25.0,
+        "boundary_sample_step": 20.0
+    },
+    "output": {
+        "basename": "graph"
+    }
+}
